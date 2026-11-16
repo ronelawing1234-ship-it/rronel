@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Letter From My Heart</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #573d4d;
+      background: linear-gradient(135deg, #fff1f4, #fff9ed, #f8efff);
+    }
+
+    .garden {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      color: #f27b9b;
+      opacity: 0;
+      animation: float-up 10s linear infinite;
+    }
+
+    .heart:nth-child(1) { left: 8%;  font-size: 22px; animation-delay: 0s; }
+    .heart:nth-child(2) { left: 24%; font-size: 30px; animation-delay: 3s; }
+    .heart:nth-child(3) { left: 44%; font-size: 18px; animation-delay: 1.5s; }
+    .heart:nth-child(4) { left: 68%; font-size: 26px; animation-delay: 5s; }
+    .heart:nth-child(5) { left: 88%; font-size: 21px; animation-delay: 2s; }
+
+    @keyframes float-up {
+      0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
+      12%  { opacity: .7; }
+      85%  { opacity: .65; }
+      100% { transform: translateY(-115vh) rotate(25deg); opacity: 0; }
+    }
+
+    .flower {
+      position: absolute;
+      font-size: clamp(24px, 4vw, 42px);
+      animation: sway 4s ease-in-out infinite alternate;
+    }
+
+    .flower:nth-child(6) { left: 4%; top: 16%; }
+    .flower:nth-child(7) { right: 7%; top: 27%; animation-delay: 1s; }
+    .flower:nth-child(8) { left: 9%; bottom: 12%; animation-delay: .5s; }
+    .flower:nth-child(9) { right: 5%; bottom: 10%; animation-delay: 1.5s; }
+
+    @keyframes sway {
+      from { transform: rotate(-12deg) translateY(0); }
+      to   { transform: rotate(12deg) translateY(-12px); }
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      width: min(760px, calc(100% - 32px));
+      margin: 56px auto;
+      padding: clamp(28px, 6vw, 58px);
+      border: 1px solid rgba(204, 132, 157, .25);
+      border-radius: 26px;
+      background: rgba(100vh, 255, 255, .86);
+      box-shadow: 0 18px 60px rgba(125, 73, 99, .14);
+      line-height: 1.85;
+      animation: arrive 1.2s ease-out both;
+    }
+
+    @keyframes arrive {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .top-heart {
+      text-align: center;
+      font-size: 34px;
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      50% { transform: scale(1.15); }
+    }
+
+    h1 {
+      margin: 8px 0 28px;
+      text-align: center;
+      color: #ad526f;
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: normal;
+    }
+
+    p { margin: 0 0 18px; }
+
+    .signoff {
+      margin-top: 30px;
+      color: #ad526f;
+      font-style: italic;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="garden" aria-hidden="true">
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="flower">🌷</span>
+    <span class="flower">🌸💐</span>
+    <span class="flower">🌼💐</span>
+    <span class="flower">🌺💐</span>
+  </div>
+
+  <main>
+    <div class="top-heart" aria-hidden="true">💗</div>
+    <h1> im miss youuu </h1>
+
+    <p>Dear Langging,</p>
+
+    <p>
+       I’m truly sorry. I’m sorry for my part in hurting you, for the way my words or actions affected
+      you, and for not handling things with the care and understanding you
+      deserved.
+    </p>
+
+    <p>
+      I know that saying “sorry” cannot undo what happened, and I don’t want
+      to pretend that one letter can make everything right. I also don’t want
+      to make excuses or rush you into feeling better. I simply want to take
+      responsibility and let you know that your feelings matter to me.
+    </p>
+
+    <p>
+      
+      when things are difficult and I need to listen, reflect, and do better.
+      I wish I had paused, thought more carefully, and tried harder to
+      understand your point of view. Looking back, I can see that I should
+      have shown you more patience, kindness, and respect.
+    </p>
+
+    <p>
+      I’m going to take this seriously. I want to learn from what happened
+      and make real changes, not just promise them because I’m afraid of
+      losing your trust. I understand that trust is built through consistent
+      actions over time, and I’m willing to do that work. If you’re open to
+      telling me what you need from me, I’ll listen without interrupting or
+      getting defensive.
+    </p>
+
+    <p>
+       I respect whatever space you need. I just
+      wanted to reach out honestly and let you know that I regret causing
+      you pain. I care about you, and I hope that, in time, my actions can
+      show that more clearly than this letter can.
+    </p>
+
+    <p>
+      I’m sorry—for the hurt, for the disappointment, and for the moment
+      when I didn’t show up as the person I want to be. You deserved better
+      from me. I hope I can earn the chance to do better, one thoughtful
+      choice at a time.
+    </p>
+
+    <p class="signoff">
+      With love and a sincere apology,<br>
+      Ronel your sabtonon, naay gamay
+    </p>
+  </main>
+</body>
+</html>
